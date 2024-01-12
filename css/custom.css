@@ -1,9 +1,33 @@
-body {
+/*
+ * Globals
+ */
+
+ body {
   font-family: 'Comfortaa', sans-serif;
+}
+
+ .bg-dark-blue {
+  background-color: #03045e;
+}
+
+.bg-light-blue {
+  background-color: #0092B3;
 }
 
 .bg-grey {
   background-color: #344055;
+}
+
+.bg-azure {
+  background-color: #E8F1F2;
+}
+.bg-gradient-blue-145deg {
+  background: rgb(3,4,94);
+  background: linear-gradient(145deg, rgba(3,4,94,1) 5%, rgba(0,146,179,1) 75%);
+}
+.bg-gradient-blue-235deg {
+  background: rgb(3,4,94);
+  background: linear-gradient(235deg, rgba(3,4,94,1) 5%, rgba(0,146,179,1) 75%);
 }
 
 /*
