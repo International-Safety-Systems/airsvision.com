@@ -80,6 +80,10 @@
 * Background Video End
 */
 
+.rounded {
+  border-radius: 15px 15px 15px 15px;
+}
+
 .client-image {
   opacity: 0.5;
   width: 30%;
