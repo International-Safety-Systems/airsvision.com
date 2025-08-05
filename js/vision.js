@@ -24,11 +24,6 @@ function initializeCookieBanner() {
     
         gtag('config', 'G-NTK9EXC9NB');
         // Google Analytics End
-        // Geo Redirection Start
-        geoLocate();
-        // Geo Redirection End
-
-
     } else {
         showCookieBanner();
     }
@@ -50,22 +45,4 @@ function isCookieAccepted()
     else if (isCookieAccepted) {
         return true;
     }
-}
-
-
-function geoLocate()
-{
-    $.get("https://vpnapi.io/api/?key=7c98a46fba024c3e946f412e2d1c1004", function(data){
-        console.log( data.location.continent );    
-        if(data.location.continent)
-        {
-            switch(data.location.continent)
-            {
-                case 'North America':
-                    
-                    $("#americaRegion").modal('show');
-                    break;
-            }
-        }
-  });
 }
